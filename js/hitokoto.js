@@ -1,0 +1,1 @@
+window.onload=function(){var e=document.querySelector(".hitokoto"),t=document.querySelector(".from");gethi=new XMLHttpRequest,gethi.open("GET","https://v1.hitokoto.cn/"),gethi.send(),gethi.onreadystatechange=function(){if(4===gethi.readyState&&200===gethi.status){var o=JSON.parse(gethi.responseText);e.innerHTML=""+o.hitokoto,t.innerHTML="——<b>"+o.from+"</b>"}}};
